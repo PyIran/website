@@ -22,13 +22,13 @@ class DefaultConfig(object):
 	TEMP_FOLDER = "%s/temp/" % os.path.dirname(os.path.abspath(__file__))
 	UPLOAD_FOLDER = "%s/upload/" % os.path.dirname(os.path.abspath(__file__))
 
-	SITE_NAME = u'سیستم حسابداری پیشگامان متن باز'
+	SITE_NAME = u'گروه کاربران پایتون ایران'
 	logger_name = 'pos_acc'
 	# Blueprint haye nasb shode dar app bayad be in list ezafe beshan
 	INSTALLED_BLUEPRINTS = tuple(get_immediate_subdirectories('project/apps'))
 	TEMPLATE_DIR = list(get_immediate_subdirectories('project/templates'))
-	LOGGER_NAME = 'pos'
-	LOG_PATH = '/var/log/chalghooz/'  # '/var/log/project/'
+	LOGGER_NAME = 'pyiran'
+	LOG_PATH = '/var/log/pyiran/'  # '/var/log/project/'
 	DEBUG_LOG = LOG_PATH + "debug.log"
 	ERROR_LOG = LOG_PATH + "error.log"
 
