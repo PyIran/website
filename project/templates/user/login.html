@@ -1,0 +1,23 @@
+
+<div id="dialog-form" title="{{ _('login user')}}">
+<p class="validateTips">{{ _('All form fields are required.') }}</p>
+<form method="post">
+  <fieldset>
+    {{login_form.csrf_token}}
+      <label for="name">usename</label>{{login_form.username}}<br>
+    {% for error in login_form.errors %}
+        {% if error == 'username' %}
+            <span dir='rtl' class="help-inline" style="color:#ff0000">{{login_form.errors[error][0]}}</span><br>
+        {% endif %}                    
+    {% endfor %}      
+    <label for="email">password</label>{{login_form.password}}<br>
+    {% for error in login_form.errors %}
+        {% if error == 'password' %}
+            <span dir='rtl' class="help-inline" style="color:#ff0000">{{login_form.errors[error][0]}}</span><br>
+        {% endif %}                    
+    {% endfor %}
+    <br/><br/>
+    <input type="submit" id="login-btn" class="btn btn-block login-btn" value="{{ _('Login') }}" /> 
+  </fieldset>
+</form>
+</div>

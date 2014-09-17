@@ -1,0 +1,12 @@
+Flask==0.9
+Flask-Babel==0.9
+Flask-WTF==0.9.4
+WTForms-Alchemy
+Flask-Sqlalchemy
+trello
+simplejson
+urllib3
+sqlalchemy-migrate
+flask-migrate
+migrate
+flask-script
